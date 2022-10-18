@@ -15,3 +15,9 @@ message is encoded into the *initial latent noise* used for sampling.
 This is *fragile* steganography (any re-encoding/cropping breaks it) but it
 demonstrates the conceptual class of attacks where generated content carries hidden
 payload that's invisible to the visual channel.
+
+
+## Files
+
+- `src/diffusion_stego.py` — encode message → seed → image
+- `src/extract_message.py` — extract message from image given prompt + protocol
