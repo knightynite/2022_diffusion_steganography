@@ -1,0 +1,35 @@
+{
+  "channels_evaluated": [
+    "JPEG-100",
+    "JPEG-95",
+    "JPEG-85",
+    "JPEG-75",
+    "WebP-90",
+    "resize-256"
+  ],
+  "diffusion_recovery": [
+    1.0,
+    0.98,
+    0.91,
+    0.74,
+    0.83,
+    0.21
+  ],
+  "diffusion_ecc_recovery": [
+    1.0,
+    1.0,
+    0.99,
+    0.94,
+    0.96,
+    0.43
+  ],
+  "lsb_recovery": [
+    1.0,
+    0.31,
+    0.04,
+    0.0,
+    0.06,
+    0.0
+  ],
+  "notes": "ECC layer (RS k=200,n=232) buys ~20pp robustness across re-encodings."
+}
