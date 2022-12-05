@@ -21,3 +21,17 @@ payload that's invisible to the visual channel.
 
 - `src/diffusion_stego.py` — encode message → seed → image
 - `src/extract_message.py` — extract message from image given prompt + protocol
+
+
+## Run
+
+```bash
+pip install -r requirements.txt
+python src/diffusion_stego.py "secret message" stego.png
+python src/extract_message.py stego.png
+```
+
+You'll need a HuggingFace account for the SD weights:
+```bash
+huggingface-cli login
+```
