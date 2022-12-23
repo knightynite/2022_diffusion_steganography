@@ -35,3 +35,12 @@ You'll need a HuggingFace account for the SD weights:
 ```bash
 huggingface-cli login
 ```
+
+
+## Caveats — read before publishing anything you build on this
+
+- Modern image distribution platforms re-encode (JPEG, resize, watermark). Real covert
+  channels through these need redundancy + ECC.
+- This is intentionally a small-payload channel — kilobits, not megabytes.
+- Detection-side research (forensics for diffusion-generated content) is the more
+  defensively useful direction.
