@@ -16,12 +16,10 @@ This is *fragile* steganography (any re-encoding/cropping breaks it) but it
 demonstrates the conceptual class of attacks where generated content carries hidden
 payload that's invisible to the visual channel.
 
-
 ## Files
 
 - `src/diffusion_stego.py` — encode message → seed → image
 - `src/extract_message.py` — extract message from image given prompt + protocol
-
 
 ## Run
 
@@ -36,7 +34,6 @@ You'll need a HuggingFace account for the SD weights:
 huggingface-cli login
 ```
 
-
 ## Caveats — read before publishing anything you build on this
 
 - Modern image distribution platforms re-encode (JPEG, resize, watermark). Real covert
@@ -44,3 +41,4 @@ huggingface-cli login
 - This is intentionally a small-payload channel — kilobits, not megabytes.
 - Detection-side research (forensics for diffusion-generated content) is the more
   defensively useful direction.
+
